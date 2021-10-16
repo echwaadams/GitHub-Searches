@@ -8,7 +8,7 @@ export class ProfileService {
 
   private username:string;
   private client_id = '';
-  private client_secret = '';
+  private client_secret = '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';
 
   getProfileInfo(){
     return this.http.get("https://api.github.com/users/" + this.username + "?client_id=" + this.client_id + "&client_secret=" + this.client_secret)
