@@ -6,14 +6,16 @@ import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ProfileComponent } from './profile/profile/profile.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { DateCountPipe } from './date-count.pipe'
+import { DateCountPipe } from './date-count.pipe';
+import { HighlightDirective } from './highlight.directive'
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     NotFoundComponent,
-    DateCountPipe
+    DateCountPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
